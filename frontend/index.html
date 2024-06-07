@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
     <header>
         <nav>
-            <ul>
+            <ul class="nav-list">
                 <li><h1 onclick="window.scrollTo(0,0)">maré_alta</h1></li>
                 <li><a href="#section1">Problema</a></li>
                 <li><a href="#section2">Tecnologia</a></li>
@@ -19,6 +20,11 @@
                 <li><a href="#section5">Benefícios</a></li>
                 <li><a href="#section6">Como Funciona</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
@@ -114,15 +120,6 @@
                 <p>Abaixo você pode se cadastrar para receber seus SMSs em caso de perigo.</p>
                 <p>Nosso servidor monitora as possíveis marés altas e irá lhe alertar em caso de necessiade.</p>
                 <p>O processo é automatizado para garantir que o envio sem atrasos, permitindo que você tenha o máximo de tempo possível para se preparar.</p>
-                <form>
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="cidade">Cidade</label>
-                    <input type="text" id="cidade" name="cidade" required>
-                    <label for="phone">Telefone:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                    <button type="submit">Cadastrar</button>
-                </form>
                 <p>Receba alertas em tempo real sobre inundações costeiras e proteger a sua família e propriedade. Assegure-se de que você esteja sempre preparado para qualquer eventualidade.</p>
             </div>
         </section>
@@ -137,5 +134,10 @@
 		<div class="blob b">b</div>
 		<div class="blob c">c</div>
 	</div>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-list').classList.toggle('open');
+        });
+    </script>
 </body>
 </html>
