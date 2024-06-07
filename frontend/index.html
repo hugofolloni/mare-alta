@@ -11,6 +11,7 @@
     <header>
         <nav>
             <ul>
+                <li><h1 onclick="window.scrollTo(0,0)">maré_alta</h1></li>
                 <li><a href="#section1">Problema</a></li>
                 <li><a href="#section2">Tecnologia</a></li>
                 <li><a href="#section3">Objetivos</a></li>
@@ -22,7 +23,7 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Proteja-se das Inundações</h1>
@@ -30,8 +31,8 @@
                     <form class="hero-form">
                         <label for="name">Nome:</label>
                         <input type="text" id="name" name="name" required>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade" required>
                         <label for="phone">Telefone:</label>
                         <input type="tel" id="phone" name="phone" required>
                         <button type="submit">Cadastrar</button>
